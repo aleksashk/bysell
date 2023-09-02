@@ -32,7 +32,6 @@ public class User implements UserDetails {
     @Column(name = "active")
     private boolean active;
 
-    @Column(name = "avatar")
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "image_id")
     private Image avatar;
