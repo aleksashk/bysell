@@ -16,9 +16,9 @@ public class UserService {
     private final PasswordEncoder passwordEncoder;
 
 
-    public boolean create(User user) {
+    public boolean createUser(User user) {
         String email = user.getEmail();
-        if (userRepository.findByEmail(user.getEmail()) != null) {
+        if (userRepository.findByEmail(email) != null) {
             return false;
         }
         user.setActive(true);

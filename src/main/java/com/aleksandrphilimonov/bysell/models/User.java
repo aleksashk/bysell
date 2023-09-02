@@ -45,11 +45,11 @@ public class User implements UserDetails {
     @Enumerated(EnumType.STRING)
     private Set<Role> roles = new HashSet<>();
 
-    private LocalDateTime dateOfCreates;
+    private LocalDateTime dateOfCreated;
 
     @PrePersist
     private void init() {
-        dateOfCreates = LocalDateTime.now();
+        dateOfCreated = LocalDateTime.now();
     }
 
     //security
