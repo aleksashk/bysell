@@ -8,7 +8,7 @@
     <title>BySell</title>
 </head>
 <body>
-<h1>BUYSELL</h1>
+<h1>BUYSELL | <a href="/login">Войти</a> </h1>
 <hr>
 <h4>Товары во всего мира</h4>
 <form action="/" method="get">
